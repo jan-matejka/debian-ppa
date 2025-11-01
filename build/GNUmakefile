@@ -1,7 +1,5 @@
 KEY=2B524183A4D7D908
 
-dist=dists/bookworm
-
 .PHONY: build
 build: index.html release
 
