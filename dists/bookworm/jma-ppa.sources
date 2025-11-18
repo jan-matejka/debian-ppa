@@ -2,5 +2,5 @@ Types: deb
 URIs: https://jan-matejka.github.io/debian-ppa
 Suites: bookworm
 Components: main
-Signed-by: /etc/apt/trusted.gpg.d/jma-ppa.gpg
+Signed-by: /etc/apt/trusted.gpg.d/jma-ppa.key
 Architectures: all amd64
