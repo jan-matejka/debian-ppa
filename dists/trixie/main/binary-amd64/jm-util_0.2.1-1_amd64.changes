@@ -1,0 +1,40 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Wed, 26 Nov 2025 15:43:31 +0100
+Source: jm-util
+Binary: jm-util jm-util-dbgsym
+Architecture: amd64
+Version: 0.2.1-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Jan Matějka <jan@matejka.ninja>
+Changed-By: Jan Matejka <jmatejka01@gmail.com>
+Description:
+ jm-util    - jm-util
+Changes:
+ jm-util (0.2.1-1) unstable; urgency=medium
+ .
+   [ Jan Matejka ]
+   * Fix dependencies, tests.
+Checksums-Sha1:
+ 4eebe70e2960163ce6f2bbef2e421085dcdba01d 2709824 jm-util-dbgsym_0.2.1-1_amd64.deb
+ 1b4f117e51b0e1f7d028f5eff4a20fcde463e846 6799 jm-util_0.2.1-1_amd64.buildinfo
+ 044919c0034e0aa76b090c85d85c16b0686f69d4 227048 jm-util_0.2.1-1_amd64.deb
+Checksums-Sha256:
+ c894223b71098561a0b4ecc268f54ede41b8232303f252282178907ed2123797 2709824 jm-util-dbgsym_0.2.1-1_amd64.deb
+ 0b6d7f0e1984f2d990b2c1553695785b3a4d56bbc6fafb741f1fde3cc10f91ac 6799 jm-util_0.2.1-1_amd64.buildinfo
+ faf9b8ca95d3d20fe8bcaa657e4cdc4807e19f9d4304f8d71e979fdb90a63844 227048 jm-util_0.2.1-1_amd64.deb
+Files:
+ 636a8e998b0dc1a67d271a3e18d8748b 2709824 debug optional jm-util-dbgsym_0.2.1-1_amd64.deb
+ d05f204bdb9f5b71a8587324481e3472 6799 misc optional jm-util_0.2.1-1_amd64.buildinfo
+ 1b227c0a9bdec9ff21236d5701b03af6 227048 misc optional jm-util_0.2.1-1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iIsEARYKADMWIQT76B4BHrs3ymkcWR8rUkGDpNfZCAUCaScSbxUcam1hdGVqa2Ew
+MUBnbWFpbC5jb20ACgkQK1JBg6TX2QilHgD+Idas/arjC+utYSpodaHP4HmO4/Ng
+oQ0RxjgX4RtKtMwBAIOxQ9kV6Gd4EjExLAW8cvgQw1Zg15rJk3rZEw0Cb0AK
+=FQdq
+-----END PGP SIGNATURE-----
