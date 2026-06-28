@@ -1,0 +1,96 @@
+Package: dram
+Version: 0.10-1
+Architecture: amd64
+Maintainer: Jan Matějka <jan@matejka.ninja>
+Installed-Size: 1523
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.2), zlib1g (>= 1:1.1.4)
+Filename: dists/trixie/main/binary-amd64/dram_0.10-1_amd64.deb
+Size: 386700
+MD5sum: 6bad37d793ccb796f1b3bded49faa178
+SHA1: 18d8d15201ee95965e6830a94faf1b5b88e0ee9b
+SHA256: d91cf6f5ecb7866d51c5344009b5daea7d1eb5d3c7626198a2db9978c2361734
+Section: misc
+Priority: optional
+Description: Literate Functional Tests for the CLI
+
+Package: jm-util
+Version: 0.2.0-1
+Architecture: amd64
+Maintainer: Jan Matějka <jan@matejka.ninja>
+Installed-Size: 727
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.3), libstdc++6 (>= 13.1), zsh
+Filename: dists/trixie/main/binary-amd64/jm-util_0.2.0-1_amd64.deb
+Size: 227192
+MD5sum: 814600e48cf821670763ce071f35a1fd
+SHA1: d7542656bd6db9a00835c745b41161e58f7618ae
+SHA256: 52b5fbf75700f6bf15fad7989c8596c3ac7d347ed20cfd2184d43d58d143e019
+Section: misc
+Priority: optional
+Description: jm-util
+
+Package: jm-util
+Version: 0.2.1-1
+Architecture: amd64
+Maintainer: Jan Matějka <jan@matejka.ninja>
+Installed-Size: 726
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.3), libstdc++6 (>= 13.1), zsh, xdgenv
+Filename: dists/trixie/main/binary-amd64/jm-util_0.2.1-1_amd64.deb
+Size: 227048
+MD5sum: 1b227c0a9bdec9ff21236d5701b03af6
+SHA1: 044919c0034e0aa76b090c85d85c16b0686f69d4
+SHA256: faf9b8ca95d3d20fe8bcaa657e4cdc4807e19f9d4304f8d71e979fdb90a63844
+Section: misc
+Priority: optional
+Description: jm-util
+
+Package: jm-util
+Version: 0.3.0-1
+Architecture: amd64
+Maintainer: Jan Matějka <jan@matejka.ninja>
+Installed-Size: 736
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.3), libstdc++6 (>= 13.1), zsh, xdgenv
+Filename: dists/trixie/main/binary-amd64/jm-util_0.3.0-1_amd64.deb
+Size: 229796
+MD5sum: 49c4302a370da4af556f9cf775e498a9
+SHA1: 7c229c8dcb9ecf0d88206e53491901d14031d1c3
+SHA256: b4ef681c4274352bf96c08a378b8899a6b3cfef75837c1f6168a2f418f5e53dd
+Section: misc
+Priority: optional
+Description: jm-util
+
+Package: jm-util-dbgsym
+Source: jm-util
+Version: 0.2.0-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Jan Matějka <jan@matejka.ninja>
+Installed-Size: 3061
+Depends: jm-util (= 0.2.0-1)
+Filename: dists/trixie/main/binary-amd64/jm-util-dbgsym_0.2.0-1_amd64.deb
+Size: 2709092
+MD5sum: 074e2ed7e528e8529f4628898e8b1cb1
+SHA1: 9b1ae0496b53a4150ad4a05ab34701f0ae3e0ed0
+SHA256: 5f061acd2f3bc0941692d4dff01e7b6f62d74e68d371c3000bf9845d5f17a859
+Section: debug
+Priority: optional
+Description: debug symbols for jm-util
+Build-Ids: 3af796983cdc1f6d6321c2e80ec1479141d10a59 811ef377a0dcc526f37ecef0b521b025968fd4ab
+
+Package: jm-util-dbgsym
+Source: jm-util
+Version: 0.2.1-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Jan Matějka <jan@matejka.ninja>
+Installed-Size: 3060
+Depends: jm-util (= 0.2.1-1)
+Filename: dists/trixie/main/binary-amd64/jm-util-dbgsym_0.2.1-1_amd64.deb
+Size: 2709824
+MD5sum: 636a8e998b0dc1a67d271a3e18d8748b
+SHA1: 4eebe70e2960163ce6f2bbef2e421085dcdba01d
+SHA256: c894223b71098561a0b4ecc268f54ede41b8232303f252282178907ed2123797
+Section: debug
+Priority: optional
+Description: debug symbols for jm-util
+Build-Ids: 811ef377a0dcc526f37ecef0b521b025968fd4ab 9fbbb2814725c03e74203a29f2ca416d83e3c827
+
