@@ -1,0 +1,52 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Sun, 28 Jun 2026 19:57:42 +0200
+Source: jm-util
+Binary: jm-util jm-util-dbgsym
+Architecture: amd64
+Version: 0.3.1-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Jan Matějka <jan@matejka.ninja>
+Changed-By: Jan Matejka <jmatejka01@gmail.com>
+Description:
+ jm-util    - jm-util
+Changes:
+ jm-util (0.3.1-1) unstable; urgency=medium
+ .
+   [ Jan Matějka ]
+   * rf(versionator): simplify regex
+   * fx(#build): make install-home - make i_bin_dir if missing
+   * ft(#build): general support to build and install zsh completions
+   * fx(jm-alias#build): make check runs dram_check
+   * ft(oci#build): rewrite gitdirs only for debuild
+   * fx(oci#build): overlays only for debuild
+   * ft(oci/Containerfile#build): add libargparse-dev for jm-alias
+   * ft(jm-alias): add --show-aliases
+   * ft(jm-alias): add --compdef
+   * ft(jm-alias): generate compdef files
+   * fx(GNUmakefile#build): PHONY: packages mark
+   * fx(versionator): always generate changelog (not just without -d)
+   * fx(#build): building dev debian packages
+Checksums-Sha1:
+ f1e10b4d5c59c49a3507674994cebab0e9cad5a7 3001280 jm-util-dbgsym_0.3.1-1_amd64.deb
+ b275e9951cb7ca4dc69b4a65366aae7d2e3e36ed 6958 jm-util_0.3.1-1_amd64.buildinfo
+ 79c872dfa623b0abf86e605d278272a7cb683fb9 271524 jm-util_0.3.1-1_amd64.deb
+Checksums-Sha256:
+ 42d41302fb0120949fda9cf47d891280e4b534b9caba81b9cd313c26ad96da2f 3001280 jm-util-dbgsym_0.3.1-1_amd64.deb
+ 9914248170d6233a78b71966db5da8609835deef9e2c3d72323f18eba4ef28c6 6958 jm-util_0.3.1-1_amd64.buildinfo
+ a79e63c5efbfa74b4f062565db88155fa24222c9a808e4ce1f3f7758f2af4575 271524 jm-util_0.3.1-1_amd64.deb
+Files:
+ 834fe15c4fcaa2dac3f9755fe606dc2c 3001280 debug optional jm-util-dbgsym_0.3.1-1_amd64.deb
+ c3e125206628eee7a704bfa2b7083048 6958 misc optional jm-util_0.3.1-1_amd64.buildinfo
+ c29cd390e88c5d41f60e80b2358a71ad 271524 misc optional jm-util_0.3.1-1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iIsEARYKADMWIQT76B4BHrs3ymkcWR8rUkGDpNfZCAUCakFgxxUcam1hdGVqa2Ew
+MUBnbWFpbC5jb20ACgkQK1JBg6TX2QionQEAgrM65kePExhS8pp5WouDwn3xkwYN
+0Nw3xOwc2Pa8HqIBAMAHpVrh1AtmFxVVbVd2fkOkTQe0wTPWb7HQg+Cb0JQL
+=c110
+-----END PGP SIGNATURE-----
