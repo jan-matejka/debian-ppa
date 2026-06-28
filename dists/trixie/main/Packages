@@ -73,6 +73,21 @@ Section: misc
 Priority: optional
 Description: jm-util
 
+Package: jm-util
+Version: 0.3.1-1
+Architecture: amd64
+Maintainer: Jan Matějka <jan@matejka.ninja>
+Installed-Size: 934
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.3), libstdc++6 (>= 13.1), zsh, xdgenv
+Filename: dists/trixie/main/binary-amd64/jm-util_0.3.1-1_amd64.deb
+Size: 271524
+MD5sum: c29cd390e88c5d41f60e80b2358a71ad
+SHA1: 79c872dfa623b0abf86e605d278272a7cb683fb9
+SHA256: a79e63c5efbfa74b4f062565db88155fa24222c9a808e4ce1f3f7758f2af4575
+Section: misc
+Priority: optional
+Description: jm-util
+
 Package: jm-util-dbgsym
 Source: jm-util
 Version: 0.2.0-1
@@ -108,6 +123,24 @@ Section: debug
 Priority: optional
 Description: debug symbols for jm-util
 Build-Ids: 811ef377a0dcc526f37ecef0b521b025968fd4ab 9fbbb2814725c03e74203a29f2ca416d83e3c827
+
+Package: jm-util-dbgsym
+Source: jm-util
+Version: 0.3.1-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Jan Matějka <jan@matejka.ninja>
+Installed-Size: 3615
+Depends: jm-util (= 0.3.1-1)
+Filename: dists/trixie/main/binary-amd64/jm-util-dbgsym_0.3.1-1_amd64.deb
+Size: 3001280
+MD5sum: 834fe15c4fcaa2dac3f9755fe606dc2c
+SHA1: f1e10b4d5c59c49a3507674994cebab0e9cad5a7
+SHA256: 42d41302fb0120949fda9cf47d891280e4b534b9caba81b9cd313c26ad96da2f
+Section: debug
+Priority: optional
+Description: debug symbols for jm-util
+Build-Ids: c110dbab8c204def74d2591dd5440b0f39c3a4e7 ee5c9a5eca06011b88888306d2160384d5a894ed
 
 Package: podman-compose
 Version: 1.5.0-1

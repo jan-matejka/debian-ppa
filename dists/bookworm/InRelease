@@ -9,9 +9,9 @@ Codename: bookworm
 Architectures: all amd64
 Components: main
 Description: Debian 12 Jan Matejka's PPA
-Date: Sun, 28 Jun 2026 18:02:20 +0000
+Date: Sun, 28 Jun 2026 18:03:58 +0000
 MD5Sum:
- b7b0c1a79fabba33aeab770fb6841ba3              203 Release
+ 8be3b009e2e471b07e007afa84b5ad95              203 Release
  faee13e6b4ee37dedb49feb0d0164b72             2253 main/Packages
  4b306242599b4152fbef1c77abf02c06              763 main/Packages.gz
  5a244cb10892c65963943d1286da4672             1196 main/Packages.xz
@@ -20,7 +20,7 @@ MD5Sum:
  577491f778f18459d57d60c8ec190109              523 main/binary-amd64/Packages
  04033e385746ca504e70fe618efcb8db              484 main/binary-amd64/Packages.xz
 SHA1:
- 00baae4057d40c90d5317fd171f72838e831d6b0              203 Release
+ b05e455467423a6d808bdc56a608dea20eb961db              203 Release
  8acd763daf25dc07583b26cad34d5ab3fa66a829             2253 main/Packages
  7b5d33da1e1bf3fbf4d888913d2ae6932832a0aa              763 main/Packages.gz
  bfebd8cffe81df101d2915e803b6a8dd50cc107b             1196 main/Packages.xz
@@ -29,7 +29,7 @@ SHA1:
  7985d1d753d29c931f663ec34e739f63a09c3bb2              523 main/binary-amd64/Packages
  54ed693a241e022c8b3d8fe63e0248f752cc905c              484 main/binary-amd64/Packages.xz
 SHA256:
- 1f8096e740523c72220eff2f7afbf493380b2aa50768a9816b8ff83299792dd0              203 Release
+ cfc1ef1d776a8d7412968dbdd63c6d274e31f449e22553cb7e2ea83d5943f2a6              203 Release
  8703aa3d45d42afa31e5b21c947ad66fbcbe11a7ddaaa24e274dbdbce1262df1             2253 main/Packages
  fcda8caaee99c0b4fd64ec1f9ea068dacdac96a90fbfbdf7b6335129701885f3              763 main/Packages.gz
  f69750ec8580bd1c1224a82a851854b3024fdf28e74f4e64a43568b4ddd636a7             1196 main/Packages.xz
@@ -38,7 +38,7 @@ SHA256:
  a85b19172954aeba240ae1508783e975b44a9a47a36237ab6604a2e8bcfe0922              523 main/binary-amd64/Packages
  56bef8b5a08a057b2f402ccf53a4f78c10a601961fd51bce283ff1b4943097c7              484 main/binary-amd64/Packages.xz
 SHA512:
- 1da826e3ae17f751f40b440315abbb4ec353f63d06658f5e451b2dd3db2304089aaf723449d9b3e02bd1115f1f61c2a1fb27bcbce31470fbabf0e8b5f3bf85c5              203 Release
+ 761649c92b9ebe541c3324beb3f0ce87d9988b5231083f80cb48f5cff201464b1d0765533cb0747a2e3b9f50fa991ce64a5b1ad85d29bfe026c38ea8db957551              203 Release
  bc7ae1915fd27edb1dd364bcfe75a17b3f3757c5657246ff09587f66c91c523056252d6bb322ac93ce775660764858e82835f7468990f8ab2bb8b524e4e7d9cf             2253 main/Packages
  fd13563c9c02c50762f3aeef3cbeda356499cae7fac3d46ef926f4e48267b102152431399a605fadda37faa4ab992715fa979aaf9f0051176ae9454982f61324              763 main/Packages.gz
  5894ad0518f914ce74131da1b9fa067f54cdf2cea64f6e39c76ebebf28727426ee9fd0716d3606a8d9b4b93b7d7594b6a9dfa12c9ea6a5226f5fd8d5a6652153             1196 main/Packages.xz
@@ -48,8 +48,8 @@ SHA512:
  3f3bd2baf24ed017a4878a2f9a41fe7f9a656f7cf74d426efb31459d780b6bbe786d7a00bf7f4592e65844652a74d91cae683cbfeeb66929fc15478915b26600              484 main/binary-amd64/Packages.xz
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYKAB0WIQT76B4BHrs3ymkcWR8rUkGDpNfZCAUCakFhrwAKCRArUkGDpNfZ
-CKEcAP47BzmWc7Uxq968aoTTMwu8AbCFhk+dnZviKk9/4IVakwEAu7WEJKQh9nKY
-SJTGTKer8aj0ogk+vwzSv6uOD4X0bQc=
-=sA7F
+iHUEARYKAB0WIQT76B4BHrs3ymkcWR8rUkGDpNfZCAUCakFiDgAKCRArUkGDpNfZ
+CFmqAPwMaC8NwC7MRYXGNYcH+OXhPO57SdG5HsuPl2/N6dY84AD/VRtRdous8yDq
+zkJxORqna5NoJnX3uHLXXc6Ld2RGNQo=
+=SJ1P
 -----END PGP SIGNATURE-----
