@@ -1,0 +1,214 @@
+ dpkg-buildpackage -us -uc -ui -i -b
+dpkg-buildpackage: info: source package jm-util
+dpkg-buildpackage: info: source version 0.3.0-1
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by Jan Matejka <jmatejka01@gmail.com>
+ dpkg-source -i --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ debian/rules clean
+prefix=/usr dh clean
+   dh_auto_clean
+	make -j8 clean
+make[1]: Entering directory '/home/user/src'
+git checkout debian/changelog
+Updated 0 paths from the index
+rm -f -r build dist
+make[1]: Leaving directory '/home/user/src'
+   dh_clean
+ debian/rules binary
+prefix=/usr dh binary
+   dh_update_autotools_config
+   dh_autoreconf
+   dh_auto_configure
+   dh_auto_build
+	make -j8 "INSTALL=install --strip-program=true"
+make[1]: Entering directory '/home/user/src'
+printf "%s\n" ./versionator ./git-cif ./core ./jm-alias | xargs -I% make -C % build
+make[2]: Entering directory '/home/user/src/versionator'
+install -m755 -d ../build/bin/
+install -m755 -d ../build/man/man1/
+install -m755 jm-versionator.zsh ../build/bin/jm-versionator
+rst2man jm-versionator.1.rst ../build/man/man1/jm-versionator.1
+make[2]: Leaving directory '/home/user/src/versionator'
+make[2]: Entering directory '/home/user/src/git-cif'
+install -m755 git-cif.zsh ../build/bin/git-cif
+install -m755 jm-cif1.zsh ../build/bin/jm-cif1
+rst2man git-cif.1.rst ../build/man/man1/git-cif.1
+make[2]: Leaving directory '/home/user/src/git-cif'
+make[2]: Entering directory '/home/user/src/core'
+install -m755 jm-backlight.zsh ../build/bin/jm-backlight
+install -m755 jm-certinfo.zsh ../build/bin/jm-certinfo
+install -m755 jm-find-git.zsh ../build/bin/jm-find-git
+install -m755 jm-gh-move-upi.zsh ../build/bin/jm-gh-move-upi
+install -m755 jm-gh-pls-upi.zsh ../build/bin/jm-gh-pls-upi
+install -m755 jm-gh.zsh ../build/bin/jm-gh
+install -m755 jm-keymap-set.zsh ../build/bin/jm-keymap-set
+install -m755 jm-keymap-toggle.zsh ../build/bin/jm-keymap-toggle
+install -m755 jm-keymap.zsh ../build/bin/jm-keymap
+install -m755 jm-offending.zsh ../build/bin/jm-offending
+install -m755 jm-random.zsh ../build/bin/jm-random
+install -m755 jm-tmux-dmenu.zsh ../build/bin/jm-tmux-dmenu
+install -m755 jm-urltitle.zsh ../build/bin/jm-urltitle
+install -m755 jm-xlock.zsh ../build/bin/jm-xlock
+install -m755 jm.zsh ../build/bin/jm
+install -m755 jm_dispatch.zsh ../build/bin/jm_dispatch
+install -m755 jm_prelude.zsh ../build/bin/jm_prelude
+install -m755 jm_version.zsh ../build/bin/jm_version
+install -m755 p-psex.zsh ../build/bin/p-psex
+install -m755 printfln.zsh ../build/bin/printfln
+install ../target/debug//jm-lcpp ../build/bin/jm-lcpp
+rst2man jm-backlight.1.rst ../build/man/man1/jm-backlight.1
+rst2man jm-certinfo.1.rst ../build/man/man1/jm-certinfo.1
+rst2man jm-keymap-set.1.rst ../build/man/man1/jm-keymap-set.1
+rst2man jm-keymap-toggle.1.rst ../build/man/man1/jm-keymap-toggle.1
+rst2man jm-keymap.1.rst ../build/man/man1/jm-keymap.1
+rst2man jm-lcpp.1.rst ../build/man/man1/jm-lcpp.1
+rst2man jm-offending.1.rst ../build/man/man1/jm-offending.1
+rst2man jm-random.1.rst ../build/man/man1/jm-random.1
+rst2man jm-xlock.1.rst ../build/man/man1/jm-xlock.1
+rst2man jm.1.rst ../build/man/man1/jm.1
+make[2]: Leaving directory '/home/user/src/core'
+make[2]: Entering directory '/home/user/src/jm-alias'
+g++ -g -std=c++26 -Wall -lfmt jm-alias.cpp -o ../build/bin/jm-alias
+../build/bin/jm-alias | xargs -I% ln -snf jm-alias ../build/bin/%
+make[2]: Leaving directory '/home/user/src/jm-alias'
+make[1]: Leaving directory '/home/user/src'
+   dh_auto_test
+	make -j8 check
+make[1]: Entering directory '/home/user/src'
+printf "%s\n" ./versionator ./git-cif ./core ./jm-alias | xargs -I% make -C % build
+make[2]: Entering directory '/home/user/src/versionator'
+make[2]: Nothing to be done for 'build'.
+make[2]: Leaving directory '/home/user/src/versionator'
+make[2]: Entering directory '/home/user/src/git-cif'
+make[2]: Nothing to be done for 'build'.
+make[2]: Leaving directory '/home/user/src/git-cif'
+make[2]: Entering directory '/home/user/src/core'
+make[2]: Nothing to be done for 'build'.
+make[2]: Leaving directory '/home/user/src/core'
+make[2]: Entering directory '/home/user/src/jm-alias'
+../build/bin/jm-alias | xargs -I% ln -snf jm-alias ../build/bin/%
+make[2]: Leaving directory '/home/user/src/jm-alias'
+printf "%s\n" ./versionator ./git-cif ./core ./jm-alias | xargs -I% make -C % check
+make[2]: Entering directory '/home/user/src/versionator'
+PATH=$PWD/../build/bin:$PATH dram -f -s zsh -t .t.rst *.t.rst
+.
+
+# Ran 1 test.
+make[2]: Leaving directory '/home/user/src/versionator'
+make[2]: Entering directory '/home/user/src/git-cif'
+PATH=$PWD/../build/bin:$PATH dram -f -s zsh -t .t.rst *.t.rst
+...
+
+# Ran 3 tests.
+make[2]: Leaving directory '/home/user/src/git-cif'
+make[2]: Entering directory '/home/user/src/core'
+PATH=$PWD/../build/bin:$PATH dram -f -s zsh -t .t.rst *.t.rst
+....
+
+# Ran 4 tests.
+make[2]: Leaving directory '/home/user/src/core'
+make[2]: Entering directory '/home/user/src/jm-alias'
+make[2]: Nothing to be done for 'check'.
+make[2]: Leaving directory '/home/user/src/jm-alias'
+make[1]: Leaving directory '/home/user/src'
+   create-stamp debian/debhelper-build-stamp
+   dh_prep
+   dh_auto_install --destdir=debian/jm-util/
+	make -j8 install DESTDIR=/home/user/src/debian/jm-util AM_UPDATE_INFO_DIR=no "INSTALL=install --strip-program=true"
+make[1]: Entering directory '/home/user/src'
+install -m755 -d /home/user/src/debian/jm-util/usr/bin/
+install -m755 -d /home/user/src/debian/jm-util/usr/man/man1/
+install -m755 -d /home/user/src/debian/jm-util/usr/share/bash-completion/completions/
+install -m755 -d /home/user/src/debian/jm-util/usr/share/zsh/vendor-completions/
+install -m644 completion/jm.bash /home/user/src/debian/jm-util/usr/share/bash-completion/completions/jm
+install -m644 completion/jm.bash /home/user/src/debian/jm-util/usr/share/zsh/vendor-completions/_jm
+printf "%s\n" ./versionator ./git-cif ./core ./jm-alias | xargs -I% make -C % install
+make[2]: Entering directory '/home/user/src/versionator'
+install -m755 ../build/bin/jm-versionator /home/user/src/debian/jm-util/usr/bin/jm-versionator
+install -m644 ../build/man/man1/jm-versionator.1 /home/user/src/debian/jm-util/usr/man/man1/jm-versionator.1
+make[2]: Leaving directory '/home/user/src/versionator'
+make[2]: Entering directory '/home/user/src/git-cif'
+install -m755 ../build/bin/git-cif /home/user/src/debian/jm-util/usr/bin/git-cif
+install -m755 ../build/bin/jm-cif1 /home/user/src/debian/jm-util/usr/bin/jm-cif1
+install -m644 ../build/man/man1/git-cif.1 /home/user/src/debian/jm-util/usr/man/man1/git-cif.1
+make[2]: Leaving directory '/home/user/src/git-cif'
+make[2]: Entering directory '/home/user/src/core'
+install -m755 ../build/bin/jm-backlight /home/user/src/debian/jm-util/usr/bin/jm-backlight
+install -m755 ../build/bin/jm-certinfo /home/user/src/debian/jm-util/usr/bin/jm-certinfo
+install -m755 ../build/bin/jm-find-git /home/user/src/debian/jm-util/usr/bin/jm-find-git
+install -m755 ../build/bin/jm-gh-move-upi /home/user/src/debian/jm-util/usr/bin/jm-gh-move-upi
+install -m755 ../build/bin/jm-gh-pls-upi /home/user/src/debian/jm-util/usr/bin/jm-gh-pls-upi
+install -m755 ../build/bin/jm-gh /home/user/src/debian/jm-util/usr/bin/jm-gh
+install -m755 ../build/bin/jm-keymap-set /home/user/src/debian/jm-util/usr/bin/jm-keymap-set
+install -m755 ../build/bin/jm-keymap-toggle /home/user/src/debian/jm-util/usr/bin/jm-keymap-toggle
+install -m755 ../build/bin/jm-keymap /home/user/src/debian/jm-util/usr/bin/jm-keymap
+install -m755 ../build/bin/jm-offending /home/user/src/debian/jm-util/usr/bin/jm-offending
+install -m755 ../build/bin/jm-random /home/user/src/debian/jm-util/usr/bin/jm-random
+install -m755 ../build/bin/jm-tmux-dmenu /home/user/src/debian/jm-util/usr/bin/jm-tmux-dmenu
+install -m755 ../build/bin/jm-urltitle /home/user/src/debian/jm-util/usr/bin/jm-urltitle
+install -m755 ../build/bin/jm-xlock /home/user/src/debian/jm-util/usr/bin/jm-xlock
+install -m755 ../build/bin/jm /home/user/src/debian/jm-util/usr/bin/jm
+install -m755 ../build/bin/jm_dispatch /home/user/src/debian/jm-util/usr/bin/jm_dispatch
+install -m755 ../build/bin/jm_prelude /home/user/src/debian/jm-util/usr/bin/jm_prelude
+install -m755 ../build/bin/jm_version /home/user/src/debian/jm-util/usr/bin/jm_version
+install -m755 ../build/bin/p-psex /home/user/src/debian/jm-util/usr/bin/p-psex
+install -m755 ../build/bin/printfln /home/user/src/debian/jm-util/usr/bin/printfln
+install -m755 ../build/bin/jm-lcpp /home/user/src/debian/jm-util/usr/bin/jm-lcpp
+install -m644 ../build/man/man1/jm-backlight.1 /home/user/src/debian/jm-util/usr/man/man1/jm-backlight.1
+install -m644 ../build/man/man1/jm-certinfo.1 /home/user/src/debian/jm-util/usr/man/man1/jm-certinfo.1
+install -m644 ../build/man/man1/jm-keymap-set.1 /home/user/src/debian/jm-util/usr/man/man1/jm-keymap-set.1
+install -m644 ../build/man/man1/jm-keymap-toggle.1 /home/user/src/debian/jm-util/usr/man/man1/jm-keymap-toggle.1
+install -m644 ../build/man/man1/jm-keymap.1 /home/user/src/debian/jm-util/usr/man/man1/jm-keymap.1
+install -m644 ../build/man/man1/jm-lcpp.1 /home/user/src/debian/jm-util/usr/man/man1/jm-lcpp.1
+install -m644 ../build/man/man1/jm-offending.1 /home/user/src/debian/jm-util/usr/man/man1/jm-offending.1
+install -m644 ../build/man/man1/jm-random.1 /home/user/src/debian/jm-util/usr/man/man1/jm-random.1
+install -m644 ../build/man/man1/jm-xlock.1 /home/user/src/debian/jm-util/usr/man/man1/jm-xlock.1
+install -m644 ../build/man/man1/jm.1 /home/user/src/debian/jm-util/usr/man/man1/jm.1
+make[2]: Leaving directory '/home/user/src/core'
+make[2]: Entering directory '/home/user/src/jm-alias'
+install -m755 ../build/bin/jm-alias /home/user/src/debian/jm-util/usr/bin/jm-alias
+../build/bin/jm-alias | xargs -I% ln -snf jm-alias /home/user/src/debian/jm-util/usr/bin/%
+make[2]: Leaving directory '/home/user/src/jm-alias'
+make[1]: Leaving directory '/home/user/src'
+   dh_installdocs
+   dh_installchangelogs
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_missing
+   dh_dwz -a
+dwz: debian/jm-util/usr/bin/jm-alias: DWARF compression not beneficial - old size 781766 new size 782900
+dwz: debian/jm-util/usr/bin/jm-lcpp: DWARF compression not beneficial - old size 5356032 new size 5380751
+   dh_strip -a
+   dh_makeshlibs -a
+   dh_shlibdeps -a
+dpkg-shlibdeps: warning: diversions involved - output may be incorrect
+ diversion by libc6 from: /lib64/ld-linux-x86-64.so.2
+dpkg-shlibdeps: warning: diversions involved - output may be incorrect
+ diversion by libc6 to: /lib64/ld-linux-x86-64.so.2.usr-is-merged
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'jm-util' in '../jm-util_0.3.0-1_amd64.deb'.
+dpkg-deb: building package 'jm-util-dbgsym' in '../jm-util-dbgsym_0.3.0-1_amd64.deb'.
+ dpkg-genbuildinfo --build=binary -O../jm-util_0.3.0-1_amd64.buildinfo
+ dpkg-genchanges --build=binary -O../jm-util_0.3.0-1_amd64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source -i --after-build .
+dpkg-buildpackage: info: binary-only upload (no source included)
+Now signing changes and any dsc files...
+ signfile buildinfo jm-util_0.3.0-1_amd64.buildinfo Jan Matejka <jmatejka01@gmail.com>
+gpg: starting migration from earlier GnuPG versions
+gpg: porting secret keys from '/home/user/.gnupg/secring.gpg' to gpg-agent
+gpg: key 837EED10F97A36A1: secret key imported
+gpg: key 3EBFD45BEEB6CA8B: secret key imported
+gpg: migration succeeded
+
+ fixup_changes buildinfo jm-util_0.3.0-1_amd64.buildinfo jm-util_0.3.0-1_amd64.changes
+ signfile changes jm-util_0.3.0-1_amd64.changes Jan Matejka <jmatejka01@gmail.com>
+
+Successfully signed buildinfo, changes files
